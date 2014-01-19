@@ -1,4 +1,4 @@
-Enter file contents here<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <integer name="config_shortAnimTime">150</integer>
     <integer name="config_mediumAnimTime">300</integer>
