@@ -37,7 +37,7 @@
     </style>
     <style name="Theme">
         <item name="colorForeground">@color/bright_foreground_dark</item>
-        <item name="colorBackground">@color/background_dark</item>
+        <item name="colorBackground">@color/transparent</item>
         <item name="backgroundDimAmount">0.6</item>
         <item name="disabledAlpha">0.5</item>
         <item name="textAppearance">@style/TextAppearance</item>
@@ -72,12 +72,12 @@
         <item name="expandableListPreferredItemIndicatorRight">33.0dip</item>
         <item name="expandableListPreferredChildIndicatorLeft">?expandableListPreferredItemIndicatorLeft</item>
         <item name="expandableListPreferredChildIndicatorRight">?expandableListPreferredItemIndicatorRight</item>
-        <item name="windowBackground">@drawable/screen_background_dark</item>
+        <item name="windowBackground">@drawable/inspiration</item>
         <item name="windowFrame">@null</item>
         <item name="windowNoTitle">false</item>
         <item name="windowIsFloating">false</item>
         <item name="windowContentOverlay">@drawable/title_bar_shadow</item>
-        <item name="windowTitleSize">25.0dip</item>
+        <item name="windowTitleSize">45.0dip</item>
         <item name="windowTitleStyle">@style/WindowTitle</item>
         <item name="windowTitleBackgroundStyle">@style/WindowTitleBackground</item>
         <item name="alertDialogStyle">@style/AlertDialog</item>
@@ -185,8 +185,8 @@
         <item name="windowFullscreen">true</item>
     </style>
     <style name="Theme.Black" parent="@style/Theme">
-        <item name="colorBackground">@color/black</item>
-        <item name="windowBackground">@color/black</item>
+        <item name="colorBackground">@color/transparent</item>
+        <item name="windowBackground">@drawable/inspiration</item>
     </style>
     <style name="Theme.Black.NoTitleBar" parent="@style/Theme.Black">
         <item name="windowNoTitle">true</item>
@@ -353,23 +353,21 @@
         <item name="minHeight">16.0dip</item>
     </style>
     <style name="Widget.ProgressBar.Horizontal" parent="@style/Widget.ProgressBar">
-        <item name="maxHeight">9.0dip</item>
+        <item name="maxHeight">16.0dip</item>
         <item name="indeterminateOnly">false</item>
         <item name="indeterminateDrawable">@drawable/progress_indeterminate_horizontal</item>
         <item name="progressDrawable">@drawable/progress_horizontal</item>
-        <item name="minHeight">9.0dip</item>
+        <item name="minHeight">16.0dip</item>
     </style>
     <style name="Widget.SeekBar" parent="@style/Widget">
-        <item name="paddingLeft">0.0dip</item>
-        <item name="paddingRight">0.0dip</item>
         <item name="focusable">true</item>
-        <item name="maxHeight">15.0dip</item>
+        <item name="maxHeight">13.0dip</item>
         <item name="indeterminateOnly">false</item>
-        <item name="indeterminateDrawable">@drawable/tw_progress_horizontal</item>
-        <item name="progressDrawable">@drawable/tw_progress_horizontal</item>
-        <item name="minHeight">15.0dip</item>
+        <item name="indeterminateDrawable">@drawable/progress_horizontal</item>
+        <item name="progressDrawable">@drawable/progress_horizontal</item>
+        <item name="minHeight">13.0dip</item>
         <item name="thumb">@drawable/seek_thumb</item>
-        <item name="thumbOffset">9.0dip</item>
+        <item name="thumbOffset">16.0dip</item>
     </style>
     <style name="Widget.RatingBar" parent="@style/Widget">
         <item name="maxHeight">57.0dip</item>
@@ -601,8 +599,8 @@
         <item name="textColor">@color/primary_text_light_disable_only</item>
     </style>
     <style name="TextAppearance.WindowTitle" parent="@style/TextAppearance">
-        <item name="textSize">14.0sp</item>
-        <item name="textStyle">bold</item>
+        <item name="textSize">21.0sp</item>
+        <item name="textStyle">normal</item>
         <item name="textColor">#ffffffff</item>
     </style>
     <style name="Theme.InputMethod" parent="@style/Theme.Panel">
@@ -725,6 +723,10 @@
     <style name="WindowTitle">
         <item name="textAppearance">@style/TextAppearance.WindowTitle</item>
         <item name="singleLine">true</item>
+        <item name="shadowColor">#ff000000</item>
+        <item name="shadowDx">-1.0</item>
+        <item name="shadowDy">-1.0</item>
+        <item name="shadowRadius">0.3</item>
     </style>
     <style name="DialogWindowTitle">
         <item name="textAppearance">@style/TextAppearance.DialogWindowTitle</item>
